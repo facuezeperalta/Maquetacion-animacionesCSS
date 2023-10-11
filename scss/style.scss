@@ -3,6 +3,8 @@ $yellow : #ffd602;
 $red: #d5040a;
 $blue: #036cb6;
 $white: #F2F2F2;
+$loaderYellow:#F2C12E;
+$ligthYellow: #F2D0A7;
 $font-family: 'Lato', sans-serif;
 /* fin variables */
 *{
@@ -39,19 +41,30 @@ body{
 }
 
 .navbar{
-    background: $yellow;
+
     grid-area: nav;
+    display: flex;
     .navbar-content{
         display: flex;
         flex-flow: row;
         align-items: center;
         width: 100%;
         padding: 0 0 0 80px;
-        animation: navbarmove 2s ease-in-out 0.5s;        
+        animation: navbarmove 2s ease-in-out 0.8s;
+     
+        @keyframes navbarmove{
+            0%{
+               transform: translateY(-200px);
+            }
+            100%{
+                transform: translateY(0px);
+            }
+        }
+    }        
         img{
+          
             width: 50px;
             height: 50px;
-            
         }
         ul{
             display: flex;
@@ -64,23 +77,53 @@ body{
                 color: $red;
                 font-family: $font-family;
                 font-weight: 600;
+                &:hover{
+                    color: $white;
+                }
             }
         }
-        @keyframes navbarmove{
-            0%{
-               transform: translateY(-200px);
-            }
-            100%{
-                transform: translateY(0px);
-            }
+       
+
+}
+
+.main-content{
+    grid-area: section;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    animation: maincontent 2s ease-in-out 1s;
+    padding-left: 80px;
+    @keyframes maincontent{
+        0%{
+            transform: translateY(-500px);
+        }
+        100%{
+            transform: translateY(0);
         }
     }
-
+    p:first-child{
+        font-family: $font-family;
+        margin-bottom: 1px;
+        font-size: 3.6rem;
+        font-weight: 300;
+        margin: 0 0 -10px 40px;
+    }
+    p:last-child{
+        font-weight: 100;
+        margin-top: 20px;
+        margin: 0;
+        width: 60%;
+    }
+    h1{
+        font-size: 4.8rem;
+        font-weight: 700;
+        margin: 0 0 30px 0;
+    }
 }
 
 
 .loader{
-    background: pink;
+    background:$loaderYellow;
     width: 100%;
     height: 100%;
     display: flex;
@@ -92,7 +135,7 @@ body{
     animation: loader 2s linear forwards;
 
     div{
-        background:lightgreen;
+        background:$ligthYellow;
         width: 40px;
         height: 40px;
         border-radius: 50%;
