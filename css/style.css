@@ -165,6 +165,57 @@ body {
   grid-row: 1/2;
 }
 
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  background: #ffd602;
+  transform: translateY(600px);
+  border-radius: 0 80px 0 0;
+  animation-name: footerup;
+  animation-duration: 0.5s;
+  animation-delay: 2.5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+@keyframes footerup {
+  0% {
+    transform: translateY(600px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.footer div {
+  width: 150px;
+  height: 100px;
+  background: #036cb6;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  display: flexbox;
+  justify-content: center;
+  transform: translateY(0px);
+  transition: transform 0.5s ease-in-out;
+}
+.footer div:hover {
+  transform: translateY(20px);
+  background: #0382dd;
+  transition: transform 0.3s ease-in-out;
+}
+.footer img {
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  bottom: 40px;
+  transform: translateY(0) scale(1);
+  transition: transform 0.5s ease-in-out;
+}
+.footer img:hover {
+  cursor: pointer;
+  transform: translateY(-20px) scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
 .loader {
   background: #F2C12E;
   width: 100%;
