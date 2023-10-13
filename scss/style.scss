@@ -336,6 +336,7 @@ body{
         display: grid;
         place-items: center;
         background: $yellow;
+        
     }
 /* hacemos el silder */
     #radio-1:checked ~ .cards #card-1,
@@ -407,8 +408,13 @@ body{
 
 /* end slider */
 
-
-
+.modal-close-aling{
+    place-self: end;
+    align-self: start;
+    position: relative;
+    right: 20px;
+    top: 10px;
+}
 
 /* animaciones loader */
 

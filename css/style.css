@@ -361,6 +361,14 @@ body {
 }
 
 /* end slider */
+.modal-close-aling {
+  place-self: end;
+  align-self: start;
+  position: relative;
+  right: 20px;
+  top: 10px;
+}
+
 /* animaciones loader */
 @keyframes loader {
   0% {
