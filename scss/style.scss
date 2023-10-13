@@ -336,7 +336,11 @@ body{
         display: grid;
         place-items: center;
         background: $yellow;
-        
+        img{
+
+            width: 150px;
+            height: 150px;
+        }
     }
 /* hacemos el silder */
     #radio-1:checked ~ .cards #card-1,

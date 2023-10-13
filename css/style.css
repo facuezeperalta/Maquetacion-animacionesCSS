@@ -307,6 +307,10 @@ body {
   place-items: center;
   background: #ffd602;
 }
+.modal-content-slider .card img {
+  width: 150px;
+  height: 150px;
+}
 .modal-content-slider #radio-1:checked ~ .cards #card-1,
 .modal-content-slider #radio-2:checked ~ .cards #card-2,
 .modal-content-slider #radio-3:checked ~ .cards #card-3 {
