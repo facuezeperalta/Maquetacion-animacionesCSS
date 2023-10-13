@@ -38,13 +38,13 @@
         </section>
 
         <section class="footer">
-            <div>
-                <img src="./Assets/img/spiderman.png" alt="Spiderman Superhero">
+            <div id="button1">
+                <img src="./Assets/img/spiderman.png" alt="Spiderman Superhero" >
             </div>
-            <div>
+            <div id="button2">
                 <img src="./Assets/img/batman.webp" alt="Batman">
             </div>
-            <div>
+            <div id="button3">
                 <img src="./Assets/img/robin.png" alt="Robin">
             </div>
         </section>
@@ -59,7 +59,35 @@
         </section>
 
         <!-- modal -->
-        <section></section>
+        <section class="modal hidden">
+            <div class="modal-content">
+                <img class="closeIcon" src="./Assets/icons/Close.svg" alt="Close icon cross sign">
+                <div class="modal-content-slider">
+
+                    <input type="radio" name="slider-1" id="radio-1" checked>
+                    <input type="radio" name="slider-1" id="radio-2">
+                    <input type="radio" name="slider-1" id="radio-3">
+                    
+                    <div class="cards">
+
+                        <label for="radio-1" id="card-1" class="card">
+                            <img src="" alt="">
+                        </label>
+
+                        <label for="radio-2" id="card-2"  class="card">
+                            <img src="" alt="">
+                        </label>
+
+                        <label for="radio-3" id="card-3"  class="card">
+                            <img src="" alt="">
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
+
+
+    <script src="./code.js"></script>
 </body>
 </html>
