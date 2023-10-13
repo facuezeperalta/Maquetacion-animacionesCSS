@@ -341,6 +341,25 @@ body {
   z-index: 0;
 }
 
+.loquiero {
+  width: 200px;
+  height: 40px;
+  background-color: #d5040a;
+  color: #F2F2F2;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  transform: scale(1);
+  transition: transform 0.5s ease-out;
+}
+.loquiero:hover {
+  background-color: #970106;
+  transform: scale(1.2);
+  transition: transform 0.3s ease-in;
+}
+
 /* end slider */
 /* animaciones loader */
 @keyframes loader {
